@@ -71,7 +71,7 @@ function initialize() {
 
 	// Select our data points using SQL-like syntax courtesy of the Google FT API
 	var layer = new google.maps.FusionTablesLayer(tableid);
-	layer.setQuery("SELECT 'lat', 'lng' FROM " + tableid);
+	layer.setQuery("SELECT 'Latitude', 'Longitude' FROM " + tableid);
 	layer.setMap(map);
 }
 
